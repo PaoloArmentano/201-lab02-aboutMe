@@ -51,14 +51,28 @@ if(placeOfBirth === coutryBirth){
     alert("How did you get that wrong? Look at my name");
 }
 
+
+
 let age = 28;
+let attempts = 4;
 
-let ageGuess = prompt("How old am I? (You have 4 guesses)");
+while (attempts > 0) {
+  let ageGuess = parseInt(prompt("How old am I? (You have " + attempts + " guesses)"));
 
-if(ageGuess === age){
-    alert("You are correct");
-} else if(ageGuess >= 29){
-    alert("Wrong, do I really look that old? That's borderline offensive, I should get you cancelled as you triggered me");
-} else if(ageGuess <= 27){
-    alert("Wrong, do I really look that young?");
+  if (ageGuess === age) {
+    alert("You are correct!");
+    break; // Exit the loop if the guess is correct
+  } else if (ageGuess >= 29) {
+    alert("Wrong! Do I really look that old? That's borderline offensive. Try again.");
+  } else if (ageGuess <= 27) {
+    alert("Wrong! Do I really look that young? Try again.");
+  }
+
+  attempts--;
 }
+
+// If all attempts are used and the age is not guessed correctly
+if (attempts === 0) {
+  alert("Sorry, you've used all your attempts. My actual age is " + age + ".");
+}
+
