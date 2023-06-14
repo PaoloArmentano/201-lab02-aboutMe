@@ -51,12 +51,14 @@ if(placeOfBirth === coutryBirth){
     alert("How did you get that wrong? Look at my name");
 }
 
-// let age = 28;
+let age = 28;
 
-// let ageGuess = prompt("How old am I? (You have 4 guesses)");
+let ageGuess = prompt("How old am I? (You have 4 guesses)");
 
-// if(placeOfBirth === coutryBirth){
-//     alert("You are correct");
-// } else{
-//     alert("How did you get that wrong? Look at my name");
-// }
+if(ageGuess === age){
+    alert("You are correct");
+} else if(ageGuess >= 29){
+    alert("Wrong, do I really look that old? That's borderline offensive, I should get you cancelled as you triggered me");
+} else if(ageGuess <= 27){
+    alert("Wrong, do I really look that young?");
+}
