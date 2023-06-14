@@ -78,11 +78,11 @@ if (attempts === 0) {
 
 
 
-let myFavouriteSport = ["Football","MMA","Basketball","Boxing","Skiing","Rugby"];
-let attempts = 6;
+let myFavouriteSport = ["Football"," MMA"," Basketball"," Boxing"," Skiing"," Rugby", " Swimming", " Tennis", " Volleyball", " Cricket", " Golf", " Running", " Cycling"];
+let attemptsSport = 6;
 
-while (attempts > 0) {
-  let sportGuess = prompt("What's my favourite sport? (You have " + attempts + " guesses)");
+while (attemptsSport > 0) {
+  let sportGuess = prompt("What's my favourite sport? These are your options: " + myFavouriteSport +  " (You have " + attemptsSport + " guesses)");
 
   if (sportGuess === "MMA".toLowerCase()) {
     alert("You are correct!");
@@ -91,12 +91,12 @@ while (attempts > 0) {
     alert("Wrong! Try again.");
   }
 
-  attempts--;
+  attemptsSport--;
 }
 
 // If all attempts are used and the age is not guessed correctly
-if (attempts === 0) {
-  alert("Sorry, you've used all your attempts. My actual age favourite sport is MMA.");
+if (attemptsSport === 0) {
+  alert("Sorry, you've used all your attempts. My actual favourite sport is MMA.");
 }
 
 
