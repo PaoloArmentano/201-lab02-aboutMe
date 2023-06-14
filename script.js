@@ -41,12 +41,22 @@ if(myMainInstrument === guitarAnswer){
 
 
 
-// let fullName = "Paolo Armentano";
+let placeOfBirth = "Italy";
 
-// let myFullName = prompt("What's my full name? (first and last name)");
+let coutryBirth = prompt("Which country was I born in?");
 
-// if(myFullName === fullName){
+if(placeOfBirth === coutryBirth){
+    alert("You are correct");
+} else{
+    alert("How did you get that wrong? Look at my name");
+}
+
+// let age = 28;
+
+// let ageGuess = prompt("How old am I? (You have 4 guesses)");
+
+// if(placeOfBirth === coutryBirth){
 //     alert("You are correct");
 // } else{
-//     alert("Come on bro that was an easy one and you still got it wrong");
+//     alert("How did you get that wrong? Look at my name");
 // }
