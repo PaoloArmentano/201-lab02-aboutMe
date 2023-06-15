@@ -8,6 +8,8 @@ body {
 	justify-content: center;
 	margin: 20px;
 	font-family: 'Quicksand', sans-serif;
+	background-color:#131313;
+	color: var(--textColor);
 }
 blockquote, q {
 	quotes: none;
@@ -23,22 +25,46 @@ table {
 } 
 
 :root {
-    --headerColors: rgb(137, 0, 0);
-    --textColor: rgb(46, 46, 46);
+    --headerColors: rgb(255, 0, 0);
+    --textColor: rgb(255, 255, 255);
 }
 
 h1 {
     color: var(--headerColors);
+	font-weight: bolder;
 }
 
 h3{
 	color: var(--headerColors);
+	font-weight: bold;
 }
 
 .bio {
 	max-width: 500px;
 }
+p {
+	line-height: 28px;
+}
 
-ol {
-    margin-left: 50px;
+.quizBtn {
+	border: none;
+	cursor: pointer;
+	height: 30px;
+	background-color: var(--headerColors);
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	border-radius: 8px;
+	padding: 0 15px 0 15px;
+}
+
+.quizBtn:hover{
+	filter: brightness(1.15);
+}
+
+.quizBtn:active{
+	transform: scale(97%);
+}
+
+li {
+	margin-top: 10px;
 }
