@@ -2,8 +2,8 @@
 
 let points = 0;
 
-let userName = prompt("Hi, please enter your name if you wanna play a game");
-console.log(userName);
+// let userName = prompt("Hi, please enter your name if you wanna play a game:");
+// console.log(userName);
 
 
   
@@ -14,13 +14,12 @@ function questionOne(){
   let myFullName = prompt("What's my full name? (first and last name)");
 
 if(myFullName.toLowerCase() === fullName.toLowerCase()){
-    alert("You are correct");
+    alert("You are correct!");
     points ++;
 } else{
     alert("Come on bro that was an easy one and you still got it wrong");
 }
 }
-
 
 
 function questionTwo(){
@@ -58,7 +57,7 @@ function questionFour(){
   let coutryBirth = prompt("Which country was I born in?");
   
   if(placeOfBirth.toLowerCase() === coutryBirth.toLowerCase()){
-      alert("You are correct");
+      alert("You are correct!");
       points ++;
   } else{
       alert("How did you get that wrong? Look at my name. Anyway, I'm italian.");
@@ -72,7 +71,7 @@ function questionFive(){
   let carGuess = prompt("What colour is my car?");
   
   if(carGuess.toLowerCase() === carColour.toLowerCase()){
-      alert("You are correct");
+      alert("You are correct!");
       points ++;
   } else{
       alert("Try again!");
@@ -129,11 +128,6 @@ function questionSeven(){
     alert("Sorry, you've used all your attempts. My actual favourite sport is MMA.");
   }
 };
-
-
-
-
-
 
 
 
