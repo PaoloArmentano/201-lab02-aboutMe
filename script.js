@@ -2,7 +2,7 @@
 
 let points = 0;
 
-let userName = prompt("Hi, please enter your name if you wanna play a game:");
+let userName = prompt("Hi, please enter your name if you wanna enter my website:");
 console.log(userName);
 
 

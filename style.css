@@ -11,18 +11,6 @@ body {
 	background-color:#131313;
 	color: var(--textColor);
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} 
 
 :root {
     --headerColors: rgb(255, 0, 0);
