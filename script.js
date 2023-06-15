@@ -1,19 +1,29 @@
 "use strict";
 
+let points = 0;
+
 let userName = prompt("Hi, please enter your name if you wanna play a game");
 console.log(userName);
 
 alert(`Hi ${userName}, wanna take a quiz about me?`)
 
-let fullName = "Paolo Armentano";
-
-let myFullName = prompt("What's my full name? (first and last name)");
+function questionOne(){
+  let fullName = "Paolo Armentano";
+  console.log("hi");
+  let myFullName = prompt("What's my full name? (first and last name)");
 
 if(myFullName.toLowerCase() === fullName.toLowerCase()){
     alert("You are correct");
+    points ++;
 } else{
     alert("Come on bro that was an easy one and you still got it wrong");
-}
+}}
+
+questionOne();
+
+
+
+
 
 
 
@@ -23,6 +33,7 @@ let myPets = prompt("What's my favourite pet? (plural noun)");
 
 if (myPets.toLowerCase().includes("cat")) {
     alert("You are correct!");
+    points ++;
   } else {
     alert(`No, ${myPets} are nice, but I prefer cats.`);
   }
@@ -35,6 +46,7 @@ let guitarAnswer = prompt("What's the main instrument I play?");
 
 if(myMainInstrument.toLowerCase() === guitarAnswer.toLowerCase()){
     alert("You are correct!");
+    points ++;
 } else{
     alert("Mate you can literally see the guitars behind me, how did you get that wrong.");
 }
@@ -47,6 +59,7 @@ let coutryBirth = prompt("Which country was I born in?");
 
 if(placeOfBirth.toLowerCase() === coutryBirth.toLowerCase()){
     alert("You are correct");
+    points ++;
 } else{
     alert("How did you get that wrong? Look at my name. Anyway, I'm italian.");
 }
@@ -61,6 +74,7 @@ while (attempts > 0) {
 
   if (ageGuess === age) {
     alert("You are correct!");
+    points ++;
     break; // Exit the loop if the guess is correct
   } else if (ageGuess >= 29) {
     alert("Wrong! Do I really look that old? That's borderline offensive. Try again.");
@@ -78,14 +92,17 @@ if (attempts === 0) {
 
 
 
+
+
 let myFavouriteSport = ["Football"," MMA"," Basketball"," Boxing"," Skiing"," Rugby", " Swimming", " Tennis", " Volleyball", " Cricket", " Golf", " Running", " Cycling"];
 let attemptsSport = 6;
 
 while (attemptsSport > 0) {
-  let sportGuess = prompt("What's my favourite sport? These are your options: " + myFavouriteSport +  " (You have " + attemptsSport + " guesses)");
+  let sportGuess = prompt("What's my favourite sport? These are your options: " + myFavouriteSport +  " (You have " + attemptsSport + " guesses)".toLowerCase());
 
-  if (sportGuess === "MMA".toLowerCase()) {
+  if (sportGuess === "mma") {
     alert("You are correct!");
+    points ++;
     break; // Exit the loop if the guess is correct
   } else {
     alert("Wrong! Try again.");
@@ -99,6 +116,8 @@ if (attemptsSport === 0) {
   alert("Sorry, you've used all your attempts. My actual favourite sport is MMA.");
 }
 
+
+alert(`You scored ${points} points`);
 
 
 
